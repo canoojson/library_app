@@ -12,7 +12,7 @@
     <!-- Menu item to open the Book list -->
 
     <menuitem id="menu_library_book"
-              name="Book"
+              name="Books"
               action="action_library_book"
               parent="library_menu" />
 </odoo>
