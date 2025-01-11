@@ -8,11 +8,29 @@
         <field name="res_model">library.book</field>
         <field name="view_mode">tree,form</field>
     </record>
+    <record id="action_library_pagina1" model="ir.actions.act_window">
+        <field name="name">Pagina 1</field>
+        <field name="res_model">res.groups</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="action_library_pagina2" model="ir.actions.act_window">
+        <field name="name">Pagina 2</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
     <!-- Menu item to open the Book list -->
 
     <menuitem id="menu_library_book"
               name="Books"
               action="action_library_book"
+              parent="library_menu" />
+    <menuitem id="menu_library_pagina1"
+              name="Pagina1"
+              action="action_library_pagina1"
+              parent="library_menu" />
+    <menuitem id="menu_library_pagina2"
+              name="Pagina2"
+              action="action_library_pagina2"
               parent="library_menu" />
 </odoo>
