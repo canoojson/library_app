@@ -25,12 +25,13 @@
               name="Books"
               action="action_library_book"
               parent="library_menu" />
+    <menuitem id="menu_library_ejercicio" name="Ejercicio" parent="library_menu"/>
     <menuitem id="menu_library_pagina1"
               name="Pagina1"
               action="action_library_pagina1"
-              parent="library_menu" />
+              parent="menu_library_ejercicio" />
     <menuitem id="menu_library_pagina2"
               name="Pagina2"
               action="action_library_pagina2"
-              parent="library_menu" />
+              parent="menu_library_ejercicio" />
 </odoo>
