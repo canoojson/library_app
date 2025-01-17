@@ -1,0 +1,61 @@
+<odoo>
+
+    /*Ejercicio Menu raiz
+                -Ejercicio
+                    -Pagina 1
+                    -Pagina 2
+    */
+    <menuitem name="Menu Raíz" id="menu_raiz"/>
+
+    <record id="action_menu_raiz" model="ir.actions.act_window">
+        <field name="name">Menu Raiz</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_library_pagina1" model="ir.actions.act_window">
+        <field name="name">Pagina 1</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_library_pagina2" model="ir.actions.act_window">
+        <field name="name">Pagina 2</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_library_ejercicio" name="Ejercicio" parent="menu_raiz"/>
+
+    <menuitem id="menu_library_pagina1"
+              name="Pagina1"
+              action="action_library_pagina1"
+              parent="menu_library_ejercicio" />
+    <menuitem id="menu_library_pagina2"
+              name="Pagina2"
+              action="action_library_pagina2"
+              parent="menu_library_ejercicio" />
+
+    /*
+        Instituto
+            -SMR
+                -1SMR
+                -2SMR
+            -DAM
+                -1DAM
+                    -DWEC (FORM)
+                -2DAM
+                    -DI (list)
+    */
+
+    <menuitem name="Instituto" id="menu_instituto"/>
+
+    <record id="action_menu_raiz" model="ir.actions.act_window">
+        <field name="name">Instituto</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+</odoo>

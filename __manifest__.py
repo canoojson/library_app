@@ -24,7 +24,8 @@
         'security/library_security.xml',
         'security/ir.model.access.csv',
         'views/library_menu.xml',
-        'views/templates.xml'
+        'views/templates.xml',
+        'views/ejercicios_clase.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
